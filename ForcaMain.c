@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include "ForcaBiblioteca.h" 
 
 int main() {
-pritf("Hello World!");
+//printf("Hello World!");
+Forca();
 
 return 0;
 }
