@@ -2,7 +2,7 @@
 #include "ForcaBiblioteca.h" 
 
 int main() {
-//printf("Hello World!");
+printf("Hello World!");
 Forca();
 
 return 0;
