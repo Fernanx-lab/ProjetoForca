@@ -1,0 +1,265 @@
+### **1. Animais**
+
+1. cachorro
+2. gato
+3. leão
+4. tigre
+5. elefante
+6. cavalo
+7. vaca
+8. ovelha
+9. jacaré
+10. urso
+11. tartaruga
+12. golfinho
+13. baleia
+14. tubarão
+15. camelo
+16. lhama
+17. coruja
+18. águia
+19. pinguim
+20. flamingo
+21. aranha
+22. abelha
+23. formiga
+24. escorpião
+25. rinoceronte
+26. hipopótamo
+27. zebra
+28. lobo
+29. raposa
+30. javali
+31. tamanduá
+32. coelho
+33. rato
+34. esquilo
+35. canguru
+36. cavalo-marinho
+37. polvo
+38. lagarto
+39. cobra
+40. anta
+41. urubu
+42. gavião
+43. morcego
+44. foca
+45. lontra
+46. pantera
+47. jaguar
+48. guaxinim
+49. suricata
+50. cavalo
+
+### **2. Frutas**
+
+1. banana
+2. maçã
+3. pera
+4. uva
+5. melancia
+6. melão
+7. abacaxi
+8. morango
+9. kiwi
+10. manga
+11. acerola
+12. caju
+13. goiaba
+14. maracujá
+15. pitanga
+16. jabuticaba
+17. ameixa
+18. figo
+19. pêssego
+20. nectarina
+21. framboesa
+22. amora
+23. limão
+24. laranja
+25. tangerina
+26. carambola
+27. graviola
+28. cupuaçu
+29. cacau
+30. tamarindo
+31. jaca
+32. abacate
+33. romã
+34. seriguela
+35. araçá
+36. cambuci
+37. mangaba
+38. buriti
+39. pequi
+40. bacaba
+41. pitaya
+42. rambutan
+43. litchi
+44. acerola
+45. banana-nanica
+46. banana-prata
+47. uva-passa
+48. coco
+49. cajá
+50. mamão
+
+### **3. Países**
+
+1. Brasil
+2. Argentina
+3. Chile
+4. Uruguai
+5. Paraguai
+6. Bolívia
+7. Peru
+8. Colômbia
+9. Venezuela
+10. Equador
+11. México
+12. Estados Unidos
+13. Canadá
+14. França
+15. Alemanha
+16. Itália
+17. Espanha
+18. Portugal
+19. Inglaterra
+20. Escócia
+21. Irlanda
+22. Suécia
+23. Noruega
+24. Dinamarca
+25. Finlândia
+26. Rússia
+27. China
+28. Japão
+29. Coreia
+30. Índia
+31. Paquistão
+32. Austrália
+33. Nova Zelândia
+34. África do Sul
+35. Egito
+36. Marrocos
+37. Argélia
+38. Tunísia
+39. Angola
+40. Moçambique
+41. Nigéria
+42. Gana
+43. Etiópia
+44. Arábia Saudita
+45. Turquia
+46. Israel
+47. Ucrânia
+48. Grécia
+49. Polônia
+50. Tailândia
+
+### **4. Times de Futebol (Brasileiros e Internacionais)**
+
+1. Flamengo
+2. Corinthians
+3. Palmeiras
+4. São Paulo
+5. Santos
+6. Vasco
+7. Fluminense
+8. Botafogo
+9. Grêmio
+10. Internacional
+11. Cruzeiro
+12. Atlético Mineiro
+13. Bahia
+14. Vitória
+15. Sport
+16. Náutico
+17. Santa Cruz
+18. Ceará
+19. Fortaleza
+20. Goiás
+21. Atlético Goianiense
+22. Coritiba
+23. Athletico Paranaense
+24. América Mineiro
+25. Ponte Preta
+26. Guarani
+27. Avaí
+28. Figueirense
+29. Chapecoense
+30. CSA
+31. CRB
+32. Londrina
+33. Paysandu
+34. Remo
+35. Sampaio Corrêa
+36. Cuiabá
+37. Brusque
+38. Vila Nova
+39. Barcelona
+40. Real Madrid
+41. Atlético de Madrid
+42. Manchester United
+43. Manchester City
+44. Chelsea
+45. Liverpool
+46. Bayern de Munique
+47. Borussia Dortmund
+48. Juventus
+49. Milan
+50. Paris Saint-Germain
+
+### **5. Filmes Famosos**
+
+1. Titanic
+2. Avatar
+3. Matrix
+4. Inception
+5. Gladiador
+6. Forrest Gump
+7. O Rei Leão
+8. Vingadores
+9. Homem de Ferro
+10. Capitão América
+11. Thor
+12. Pantera Negra
+13. Doutor Estranho
+14. O Senhor dos Anéis
+15. Harry Potter
+16. Star Wars
+17. Jurassic Park
+18. De Volta para o Futuro
+19. O Poderoso Chefão
+20. Rocky
+21. Rambo
+22. Clube da Luta
+23. O Iluminado
+24. O Exorcista
+25. A Freira
+26. Jogos Vorazes
+27. Divergente
+28. A Origem
+29. O Lobo de Wall Street
+30. Django Livre
+31. Bastardos Inglórios
+32. Coringa
+33. Batman Begins
+34. O Cavaleiro das Trevas
+35. A Bela e a Fera
+36. Aladdin
+37. Procurando Nemo
+38. Toy Story
+39. Monstros S.A.
+40. Up: Altas Aventuras
+41. Divertida Mente
+42. Soul
+43. Encanto
+44. Frozen
+45. Moana
+46. Viva: A Vida é uma Festa
+47. Ratatouille
+48. Os Incríveis
+49. Minions
+50. Meu Malvado Favorito
+
