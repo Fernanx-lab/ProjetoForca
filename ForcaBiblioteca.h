@@ -4,13 +4,20 @@
 #include <stdbool.h>
 #include <string.h>
 
-void LerPalavras()
+char* LerPalavras()
 {
-    FILE* palavras = fopen("palavras_forca.txt", "R");
-    srand(time(NULL));
-    int numeroDoTopico = rand() % 5;
-    int numeroDaPalavra = rand() % 50;
+    FILE* palavras = fopen("palavras_forca_corrigido.txt", "r");
 
+    srand(time(NULL));
+
+    int numeroDoTopico = (rand() % 6) + 1;  
+    int numeroDaPalavra = (rand() % 50) + 1; 
+
+    char* palavra = AcheTopico(palavras, numeroDoTopico, numeroDaPalavra);
+
+    fclose(palavras);
+
+    return palavra; 
 }
 
 void Forca()
@@ -23,7 +30,7 @@ void Forca()
     printf("|\n");
 }
 
-bool AcheTopico(FILE* arquivo, int numeroDoTopico)
+char* AcheTopico(FILE* arquivo, int numeroDoTopico, int numeroDaPalavra)
 {
     char linha[100];
     char tagProcurada[10];
@@ -36,9 +43,38 @@ bool AcheTopico(FILE* arquivo, int numeroDoTopico)
     {
         if (strcmp(linha, tagProcurada) == 0)
         {
-            return true; 
+            return AchePalavra(arquivo, numeroDoTopico, numeroDaPalavra);
         }
     }
 
-    return false; 
+    return NULL;
+}
+
+char* AchePalavra(FILE* arquivo, int numeroDoTopico, int numeroDaPalavra)
+{
+    char linha[100];
+    char tagProcurada[20];
+
+    sprintf(tagProcurada, "[T%dP%d]", numeroDoTopico, numeroDaPalavra);
+
+    rewind(arquivo);
+
+    while (fscanf(arquivo, "%s", linha) != EOF)
+    {
+        if (strcmp(linha, tagProcurada) == 0)
+        {
+            fscanf(arquivo, "%s", linha);
+
+            char* palavra = malloc(strlen(linha) + 1);
+            if (palavra == NULL)
+            {
+                printf("Erro de memoria.\n");
+                exit(1);
+            }
+            strcpy(palavra, linha);
+            return palavra;
+        }
+    }
+
+    return NULL;
 }

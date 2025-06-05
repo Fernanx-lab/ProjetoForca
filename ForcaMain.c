@@ -4,6 +4,7 @@
 int main() {
 printf("Hello World!");
 Forca();
+printf(LerPalavras());
 
 return 0;
 }
