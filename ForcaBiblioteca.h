@@ -4,22 +4,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-char* LerPalavras()
-{
-    FILE* palavras = fopen("palavras_forca_corrigido.txt", "r");
-
-    srand(time(NULL));
-
-    int numeroDoTopico = (rand() % 6) + 1;  
-    int numeroDaPalavra = (rand() % 50) + 1; 
-
-    char* palavra = AcheTopico(palavras, numeroDoTopico, numeroDaPalavra);
-
-    fclose(palavras);
-
-    return palavra; 
-}
-
 void Forca()
 {
     printf("+----------+\n");
@@ -28,6 +12,34 @@ void Forca()
     printf("|\n");
     printf("|\n");
     printf("|\n");
+}
+
+char* AchePalavra(FILE* arquivo, int numeroDoTopico, int numeroDaPalavra)
+{
+    char linha[100];
+    char tagProcurada[20];
+
+    sprintf(tagProcurada, "[T%dP%d]", numeroDoTopico, numeroDaPalavra);
+
+    while (fscanf(arquivo, "%s", linha) != EOF)
+    {
+        if (strcmp(linha, tagProcurada) == 0)
+        {
+            if (fscanf(arquivo, "%s", linha) == 1)
+            {
+                char* palavra = malloc(strlen(linha) + 1);
+                if (palavra == NULL)
+                {
+                    printf("Erro de memoria.\n");
+                    exit(1);
+                }
+                strcpy(palavra, linha);
+                return palavra;
+            }
+        }
+    }
+
+    return NULL;
 }
 
 char* AcheTopico(FILE* arquivo, int numeroDoTopico, int numeroDaPalavra)
@@ -50,31 +62,37 @@ char* AcheTopico(FILE* arquivo, int numeroDoTopico, int numeroDaPalavra)
     return NULL;
 }
 
-char* AchePalavra(FILE* arquivo, int numeroDoTopico, int numeroDaPalavra)
+char* LerPalavras()
 {
-    char linha[100];
-    char tagProcurada[20];
+    FILE* palavras = fopen("C:\\Work\\ProjetoForca\\palavras_forca.txt", "r");
 
-    sprintf(tagProcurada, "[T%dP%d]", numeroDoTopico, numeroDaPalavra);
+    srand(time(NULL));
 
-    rewind(arquivo);
+    int numeroDoTopico = (rand() % 6) + 1;    
+    int numeroDaPalavra = (rand() % 50) + 1;    
 
-    while (fscanf(arquivo, "%s", linha) != EOF)
+    char* palavra = AcheTopico(palavras, numeroDoTopico, numeroDaPalavra);
+
+    fclose(palavras);
+
+    return palavra;
+}
+
+int QtdLetras(char* palavra)
+{
+    int contador = 0;
+    while (palavra[contador] != '\0')
     {
-        if (strcmp(linha, tagProcurada) == 0)
-        {
-            fscanf(arquivo, "%s", linha);
-
-            char* palavra = malloc(strlen(linha) + 1);
-            if (palavra == NULL)
-            {
-                printf("Erro de memoria.\n");
-                exit(1);
-            }
-            strcpy(palavra, linha);
-            return palavra;
-        }
+        contador++;
     }
+    return contador;
+}
 
-    return NULL;
+void TamanhoDaPalavra(char* palavra)
+{
+    int tamanho = QtdLetras(palavra);
+    for(int i = 0; i < tamanho; i++)
+    {
+        printf("_ ");
+    }
 }

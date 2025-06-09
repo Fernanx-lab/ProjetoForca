@@ -2,9 +2,11 @@
 #include "ForcaBiblioteca.h" 
 
 int main() {
-printf("Hello World!");
 Forca();
-printf(LerPalavras());
+char palavra[100] = LerPalavras();
+int x = QtdLetras(palavra);
+printf("Quantidade de letras: %d\n", x);
+TamanhoDaPalavra(palavra);
 
 return 0;
 }
